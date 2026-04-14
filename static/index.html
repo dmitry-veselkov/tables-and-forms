@@ -9,7 +9,76 @@
 <main>
     <h1>Найди себе друга!</h1>
 
-    <!--Форму размещай тут-->
+    <form action="/pets/orders" method="post">
+
+        <div>
+            <label for="petType">Вид животного: </label>
+            <select name="petType" id="petType">
+                <option value="dog" selected>Собака</option>
+                <option value="gagaga">Гусь</option>
+                <option value="dikiy braz">Дикобраз</option>
+                <option value="exixixidna">Ехидна</option>
+                <option value="Artem">Артём</option>
+            </select>
+        </div>
+
+        <div>
+            <input type="radio" checked id="male" name="gender" value="boy">
+            <label for="male">Самец</label>
+
+            <input type="radio" id="female" name="gender" value="girl">
+            <label for="female">Самка</label>
+
+            <input type="radio" id="no-gender" name="gender" value="none">
+            <label for="no-gender">Без пола</label>
+        </div>
+
+        <div>
+            <label for="female">Цвет глаз:</label>
+            <input type="color" id="eyeColor" name="eyeColor" value="eyeColor">
+        </div>
+
+        <div>
+            <label for="tailLength">Длина хвоста:</label>
+            <input type="number" id="tailLength" name="tailLength"
+                   value="42" min="7" max="120" placeholder="52 см"
+                   required>
+        </div>
+
+        <div>
+            <label for="name">Кличка: </label>
+            <input type="text" id="name" name="name"
+                   minlength="3" maxlength="50" required value="АртемАртем">
+        </div>
+
+        <div>
+            <label for="birthday">Хеппи бездей: </label>
+            <input type="date" id="birthday" name="dateOfBirth" required
+                   value="2018-07-22">
+        </div>
+
+        <div>
+            <label for="email">Email: </label>
+            <input type="email" id="email" name="email" required
+                   value="d@ru">
+        </div>
+
+        <div>
+            <label for="phone">Номер телефона: </label>
+            <input type="tel" id="phone" name="phone" required
+                   value="+79000000000">
+        </div>
+
+        <div>
+            <input type="checkbox" id="rules" name="rules" checked required
+                   value="true">
+            <label for="rules">Согласен ептель!</label>
+        </div>
+
+        <button type="submit">Тык</button>
+        <button type="reset">Пик</button>
+
+    </form>
 
 </main>
 </body>
